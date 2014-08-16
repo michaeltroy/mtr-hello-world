@@ -1,8 +1,6 @@
-seed-element
+Hello world
 ================
 
-See the [component page](http://polymerlabs.github.io/seed-element) for more information.
+My first Polymer web component.
 
-## Getting Started
-
-We've put together a [guide to seed-element](http://www.polymer-project.org/docs/start/reusableelements.html) to help get you rolling.
+You can change the greeting from 'Hello' to something else.
