@@ -1,16 +1,25 @@
 {
-  "name": "hello-world",
+  "name": "mt-hello-world",
   "version": "0.0.4",
   "authors": [
-  "@michaeltroy"
+    "@michaeltroy"
   ],
   "description": "My first Polymer web component.",
-  "keywords": "seed, polymer, web-components",
-  "main": "seed-element.html",
+  "keywords": [
+    "seed",
+    "polymer",
+    "web-components"
+  ],
+  "main": "hello-world.html",
   "license": "MIT",
   "homepage": "https://github.com/michaeltroy/hello-world",
   "ignore": [
-    "**/.*"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~0.3.4",
