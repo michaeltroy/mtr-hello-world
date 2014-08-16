@@ -1,4 +1,16 @@
 <link rel="import" href="../polymer/polymer.html">
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <hello-world></hello-world>
+
+@element hello-world
+@blurb A greeting to the world.
+@status alpha
+
+-->
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 <style type="text/css" media="screen">
@@ -12,19 +24,33 @@
   <template>
     <p><span id="el" style="color: {{color}}">{{greeting}}</span> world.</p>
     <input id="greetingInput" value="{{greeting}}" placeholder="s">
+    
   </template>
   <script>
   	Polymer('hello-world', {
+      /**
+       * The `greeting` attribute sets an initial greeting.
+       * 
+       * @attribute greeting
+       * @type string
+       * @default 'Hello'
+       */
       greeting: "Hello",
-      color: 'green',
-      
+          
+      /**
+       * The `greetingChanged` method will change the greeting text.
+       * 
+       * @method greetingChanged
+       * @param {String} greeting Pass in a specific greeting.
+       * @return {String} Returns a string greeting.
+       */
     	greetingChanged: function(){
       	if (this.greeting) {
         	this.greeting = this.greeting;
       	}
     	}
 
-    	/* 
+    	/*
     	ready: function() {    	
     	  this.job('job', function(){
         	this.$.el.textContent = this.greeting;
