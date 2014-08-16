@@ -1,14 +1,14 @@
 {
-  "name": "seed-element",
-  "version": "0.0.0",
+  "name": "hello-world",
+  "version": "0.0.3",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+  "@michaeltroy"
   ],
-  "description": "Element providing solution to no problem in particular.",
+  "description": "My first Polymer web component.",
   "keywords": "seed, polymer, web-components",
   "main": "seed-element.html",
   "license": "MIT",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/michaeltroy/hello-world",
   "ignore": [
     "**/.*"
   ],
