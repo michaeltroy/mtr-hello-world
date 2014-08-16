@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer.html">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+	html {
+    font-family: 'Roboto', sans-serif;
+  	padding: 24px;
+	}
+</style>
+
+<polymer-element name="hello-world">
+  <template>
+    <p><span id="el" style="color: {{color}}">{{greeting}}</span> world.</p>
+    <input id="greetingInput" value="{{greeting}}" placeholder="s">
+  </template>
+  <script>
+  	Polymer('hello-world', {
+      greeting: "Goodbye",
+      color: 'green',
+      
+    	greetingChanged: function(){
+      	if (this.greeting) {
+        	this.greeting = this.greeting;
+      	}
+    	}
+
+    	/* 
+    	ready: function() {    	
+    	  this.job('job', function(){
+        	this.$.el.textContent = this.greeting;
+    	  }, 2000);
+    	} 
+    	*/ 	
+    });
+  </script>
+</polymer-element>
