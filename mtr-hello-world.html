@@ -23,11 +23,11 @@ Element providing solution to no problem in particular.
 <polymer-element name="mtr-hello-world">
   <template>
     <p><span id="el" style="color: {{color}}">{{greeting}}</span> world.</p>
-    <input id="greetingInput" value="{{greeting}}" placeholder="s">
+    <input id="greetingInput" value="{{greeting}}" placeholder="{{Greeting}}">
     
   </template>
   <script>
-  	Polymer('hello-world', {
+  	Polymer('mtr-hello-world', {
       /**
        * The `greeting` attribute sets an initial greeting.
        * 

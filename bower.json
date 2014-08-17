@@ -10,9 +10,9 @@
     "polymer",
     "web-components"
   ],
-  "main": "hello-world.html",
+  "main": "mtr-hello-world.html",
   "license": "MIT",
-  "homepage": "https://github.com/michaeltroy/hello-world",
+  "homepage": "https://github.com/michaeltroy/mtr-hello-world",
   "ignore": [
     "**/.*",
     "node_modules",
